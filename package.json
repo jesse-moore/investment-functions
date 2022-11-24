@@ -1,0 +1,20 @@
+{
+  "name": "azure-functions-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build && func extensions install",
+    "start": "npm-run-all --parallel start:host watch",
+    "start:host": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@azure/functions": "^3.0.0",
+    "@types/node": "16.x",
+    "typescript": "^4.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

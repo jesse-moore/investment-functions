@@ -12,18 +12,18 @@
 			"type": "shell",
 			"label": "npm build",
 			"command": "npm run watch",
-			"dependsOn": "npm install",
+			"dependsOn": "npm install (functions)",
 			"problemMatcher": "$tsc-watch",
 			"isBackground": true
 		},
 		{
 			"type": "shell",
-			"label": "npm install",
+			"label": "npm install (functions)",
 			"command": "npm install"
 		},
 		{
 			"type": "shell",
-			"label": "npm prune",
+			"label": "npm prune (functions)",
 			"command": "npm prune --production",
 			"dependsOn": "npm build",
 			"problemMatcher": []
